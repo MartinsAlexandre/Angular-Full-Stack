@@ -35,6 +35,7 @@ h5 {
 /* both vendor-prefix and standard property */
 
 #conteneur {
+  z-index: 10;
   position: relative;
   width: 150px;
   height: 200px;
@@ -149,4 +150,43 @@ h5 {
     transform-origin: center;
     transform: rotateZ(360deg);
   }
+}
+
+/*fin du cube*/
+
+.nom {
+  color: white;
+  font-weight: bold;
+  background-color: rgba(100, 149, 237);
+  border-radius: 20px;
+  width: 350px;
+  padding: 10px;
+}
+
+.nom0 {
+  position: absolute;
+  bottom: 30%;
+  left: 15%;
+  text-align: left;
+}
+
+.nom1 {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  text-align: left;
+}
+
+.nom2 {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  text-align: right;
+}
+
+.nom3 {
+  position: absolute;
+  bottom: 30%;
+  right: 15%;
+  text-align: right;
 }
