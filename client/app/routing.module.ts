@@ -1,3 +1,4 @@
+import { TeamsComponent } from './teams/teams.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: '', component: AboutComponent },
   { path: 'cats', component: CatsComponent },
   { path: 'devs', component: DevsComponent },
+  { path: 'teams', component: TeamsComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },

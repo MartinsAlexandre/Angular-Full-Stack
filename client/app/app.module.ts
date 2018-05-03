@@ -20,6 +20,7 @@ import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { TournamentComponent } from './tournament/tournament.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TeamsComponent } from './teams/teams.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -38,6 +39,7 @@ export function tokenGetter() {
     AdminComponent,
     TournamentComponent,
     NotFoundComponent,
+    TeamsComponent,
   ],
   imports: [
     RoutingModule,
