@@ -5,6 +5,11 @@ body, html {
     line-height: 1.8;
 }
 
+.image-principale {
+    height: 30vw;
+    width: 40vw;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
