@@ -19,8 +19,14 @@ export class DevsComponent implements OnInit {
 
   addDevForm: FormGroup;
   name = new FormControl('', Validators.required);
+  pays = new FormControl('', Validators.required);
+  team = new FormControl('', Validators.required);
   age = new FormControl('', Validators.required);
-  weight = new FormControl('', Validators.required);
+  skills = new FormControl('', Validators.required);
+  imgDev = new FormControl('', Validators.required);
+  flag = new FormControl('', Validators.required);
+  describeTeam = new FormControl('', Validators.required);
+  describeDev = new FormControl('', Validators.required);
 
   constructor(private devService: DevService,
     private formBuilder: FormBuilder,
@@ -30,8 +36,14 @@ export class DevsComponent implements OnInit {
     this.getDevs();
     this.addDevForm = this.formBuilder.group({
       name: this.name,
+      pays: this.pays,
+      team: this.team,
       age: this.age,
-      weight: this.weight,
+      skills: this.skills,
+      imgDev: this.imgDev,
+      flag: this.flag,
+      describeTeam: this.describeTeam,
+      describeDev: this.describeDev,
     });
   }
 
