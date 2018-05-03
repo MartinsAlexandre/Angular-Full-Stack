@@ -2,7 +2,7 @@
 
 <app-toast [message]="toast.message"></app-toast>
 <div class="card mb-3" *ngIf="!isLoading">
-  <h4 class="card-header">Current cats ({{ cats.length }})</h4>
+  <h4 class="card-header">Current devs ({{ devs.length }})</h4>
   <div class="card-body">
     <table class="table table-bordered">
       <thead class="thead-light">
@@ -13,20 +13,20 @@
           <th scope="col">Actions</th>
         </tr>
       </thead>
-      <tbody *ngIf="cats.length === 0">
+      <tbody *ngIf="devs.length === 0">
         <tr>
-          <td colspan="4">There are no cats in the DB. Add a new cat below.</td>
+          <td colspan="4">There are no devs in the DB. Add a new dev below.</td>
         </tr>
       </tbody>
       <tbody *ngIf="!isEditing">
-        <tr *ngFor="let cat of cats">
-          <td>{{ cat.name }}</td>
-          <td>{{ cat.age }}</td>
-          <td>{{ cat.weight }}</td>
+        <tr *ngFor="let dev of devs">
+          <td>{{ dev.name }}</td>
+          <td>{{ dev.age }}</td>
+          <td>{{ dev.weight }}</td>
           <td>
-            <button class="btn btn-sm btn-primary" (click)="enableEditing(cat)">
+            <button class="btn btn-sm btn-primary" (click)="enableEditing(dev)">
               <i class="fa fa-pencil"></i> Edit</button>
-            <button class="btn btn-sm btn-danger" (click)="deleteCat(cat)">
+            <button class="btn btn-sm btn-danger" (click)="deleteDev(dev)">
               <i class="fa fa-trash"></i> Delete</button>
           </td>
         </tr>
@@ -34,10 +34,10 @@
       <tbody *ngIf="isEditing">
         <tr>
           <td colspan="4">
-            <form class="form-inline" #form="ngForm" (ngSubmit)="editCat(cat)">
-              <input class="form-control mr-2" type="text" name="name" [(ngModel)]="cat.name" placeholder="Name" required>
-              <input class="form-control mr-2" type="number" name="age" [(ngModel)]="cat.age" placeholder="Age" min="0" required>
-              <input class="form-control mr-2" type="number" name="weight" [(ngModel)]="cat.weight" placeholder="Weight" step="any" min="0"
+            <form class="form-inline" #form="ngForm" (ngSubmit)="editDev(dev)">
+              <input class="form-control mr-2" type="text" name="name" [(ngModel)]="dev.name" placeholder="Name" required>
+              <input class="form-control mr-2" type="number" name="age" [(ngModel)]="dev.age" placeholder="Age" min="0" required>
+              <input class="form-control mr-2" type="number" name="weight" [(ngModel)]="dev.weight" placeholder="Weight" step="any" min="0"
                 required>
               <button class="btn btn-sm btn-primary mr-2" type="submit" [disabled]="!form.form.valid">
                 <i class="fa fa-floppy-o"></i> Save</button>
@@ -52,13 +52,13 @@
 </div>
 
 <div class="card" *ngIf="!isEditing">
-  <h4 class="card-header">Add new cat</h4>
+  <h4 class="card-header">Add new dev</h4>
   <div class="card-body">
-    <form class="form-inline" [formGroup]="addCatForm" (ngSubmit)="addCat()">
+    <form class="form-inline" [formGroup]="addDevForm" (ngSubmit)="addDev()">
       <input class="form-control mr-2" type="text" name="name" formControlName="name" placeholder="Name">
       <input class="form-control mr-2" type="number" name="weight" formControlName="weight" placeholder="Weight" step="any" min="0">
       <input class="form-control mr-2" type="number" name="age" formControlName="age" placeholder="Age" min="0">
-      <button class="btn btn-primary" type="submit" [disabled]="!addCatForm.valid">
+      <button class="btn btn-primary" type="submit" [disabled]="!addDevForm.valid">
         <i class="fa fa-floppy-o"></i> Add</button>
     </form>
   </div>

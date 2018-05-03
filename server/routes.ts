@@ -1,6 +1,7 @@
 import * as express from 'express';
 
 import CatController from './controllers/CatController';
+import DevController from './controllers/DevController';
 import UserController from './controllers/UserController';
 // import cat from './models/cat';
 // import user from './models/user';
@@ -10,6 +11,7 @@ export default function routes(app) {
   const router = express.Router();
 
   const cat = new CatController();
+  const dev = new DevController();
   const user = new UserController();
 
   // cats
@@ -19,6 +21,14 @@ export default function routes(app) {
   router.route('/cat/:id').get(cat.get);
   router.route('/cat/:id').put(cat.update);
   router.route('/cat/:id').delete(cat.delete);
+
+  // devs
+  router.route('/devs').get(dev.getAll);
+  router.route('/devs/count').get(dev.count);
+  router.route('/dev').post(dev.insert);
+  router.route('/dev/:id').get(dev.get);
+  router.route('/dev/:id').put(dev.update);
+  router.route('/dev/:id').delete(dev.delete);
 
   // users
   router.route('/login').post(user.login);
