@@ -1,11 +1,17 @@
 import * as mongoose from 'mongoose';
 
-const catSchema = new mongoose.Schema({
+const devSchema = new mongoose.Schema({
   name: String,
-  weight: Number,
+  team: String,
+  pays: String,
   age: Number,
+  skills: String,
+  imgDev: String,
+  flag: String,
+  describeTeam: String,
+  describeDev: String,
 });
 
-const catModel = mongoose.model('cat', catSchema);
+const devModel = mongoose.model('dev', devSchema);
 
-export default catModel;
+export default devModel;
