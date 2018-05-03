@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Monospace", sans-serif;}
 body, html {
     height: 100%;
     color: #777;
@@ -44,4 +44,15 @@ body, html {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
+}
+.padding-map {
+    padding-left: 20vw;
+}
+
+.padding-icone-all {
+    padding-top: 5vw;
+}
+
+.padding-icone {
+    padding-top: 2vw;
 }
