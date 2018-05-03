@@ -5,11 +5,13 @@ import { Dev } from '../shared/models/dev.model';
 @Component({
   selector: 'app-teams',
   templateUrl: './teams.component.html',
+  styleUrls: ['./teams.component.css'],
 })
 export class TeamsComponent implements OnInit {
   dev = new Dev();
   devs: Dev[] = [];
   isLoading = true;
+  selectedDevs: Dev[] = [];
 
   constructor(private devService: DevService) { }
   ngOnInit() {
@@ -22,5 +24,8 @@ export class TeamsComponent implements OnInit {
       () => this.isLoading = false,
     );
   }
-
+  showTeam(teamName: string) {
+    this.selectedDevs = this.devs.filter(dev => dev.team === teamName);
+    console.log(this.selectedDevs);
+  }
 }

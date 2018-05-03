@@ -1,0 +1,152 @@
+#body {
+  height: 90vh;
+  background-image: url("../../assets/tournament.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.card {
+  background-color: cornflowerblue;
+  float: left;
+  margin-left: 2.6%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#btnCard {
+  position: absolute;
+  bottom: 3%;
+  left: 16%;
+}
+
+h5 {
+  margin-top: 5px;
+}
+
+/*cube*/
+
+/* both vendor-prefix and standard property */
+
+#conteneur {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  margin: 0px auto;
+  perspective: 300px;
+  perspective-origin: center;
+}
+
+.face {
+  background-size: 166%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  line-height: 150px;
+  text-align: center;
+  font-size: 80px;
+  opacity: 1;
+  border: solid 1px black;
+  transition: transform 400ms;
+}
+
+.cote1 {
+  background-color: silver;
+  transform: translateZ(75px);
+}
+
+#conteneur:hover .cote1 {
+  transform: translateZ(150px);
+}
+
+.cote2 {
+  background-image: url("../../assets/tournament.jpg");
+  transform: translateX(75px) rotateY(90deg);
+}
+
+#conteneur:hover .cote2 {
+  transform: translateX(150px) rotateY(90deg);
+}
+
+.cote3 {
+  background-image: url("../../assets/tournament.jpg");
+  transform: translateX(-75px) rotateY(-90deg);
+}
+
+#conteneur:hover .cote3 {
+  transform: translateX(-150px) rotateY(-90deg);
+}
+
+.cote4 {
+  background-image: url("../../assets/tournament.jpg");
+  transform: translateY(75px) rotateX(-90deg);
+}
+
+#conteneur:hover .cote4 {
+  transform: translateY(150px) rotateX(-90deg);
+}
+
+.cote5 {
+  background-image: url("../../assets/tournament.jpg");
+  transform: translateY(-75px) rotateX(90deg);
+}
+
+#conteneur:hover .cote5 {
+  transform: translateY(-150px) rotateX(90deg);
+}
+
+.cote6 {
+  background-image: url("../../assets/tournament.jpg");
+  transform: translateZ(-75px);
+}
+
+#conteneur:hover .cote6 {
+  transform: translateZ(-150px);
+}
+
+.parent {
+  margin-top: 100px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  animation: AnimCubeXY 5s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.parentChild {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  animation: AnimCubeZ 10s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes AnimCubeXY {
+  0% {
+    transform-origin: center;
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotateY(360deg) rotateX(720deg);
+  }
+}
+
+@keyframes AnimCubeZ {
+  0% {
+    transform-origin: center;
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotateZ(360deg);
+  }
+}
