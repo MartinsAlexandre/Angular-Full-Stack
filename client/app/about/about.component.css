@@ -10,6 +10,10 @@ body, html {
     width: 40vw;
 }
 
+.w3-black, .w3-hover-black:hover {
+    color: #fff !important;
+    background-color: rgba(0,0,0,0.5) !important;
+}
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
