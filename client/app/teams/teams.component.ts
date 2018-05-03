@@ -3,10 +3,10 @@ import { DevService } from '../services/dev.service';
 import { Dev } from '../shared/models/dev.model';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
+  selector: 'app-teams',
+  templateUrl: './teams.component.html',
 })
-export class AboutComponent implements OnInit {
+export class TeamsComponent implements OnInit {
   dev = new Dev();
   devs: Dev[] = [];
   isLoading = true;
