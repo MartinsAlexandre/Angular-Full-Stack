@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "coalition";
+  src: url("../assets/fonts/Coalition.ttf");
+}
 .navMenu {
   color: #fff !important;
+  font-family: 'coalition', sans-serif;
   background-color: rgba(0, 0, 0, 0.3) !important;
   /* position: fixed;
     top: 0;
