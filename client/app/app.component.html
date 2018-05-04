@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <a routerLink="/" class="nav-link link-3" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
               <i class="fa fa-home"></i> Home
             </a>
           </li>
@@ -24,54 +24,54 @@
             </a>
           </li> -->
           <li class="nav-item">
-            <a routerLink="/teams" class="nav-link" routerLinkActive="active">
+            <a routerLink="/teams" class="nav-link link-3" routerLinkActive="active">
               <i class="fa fa-snapchat-ghost"></i> Team
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/tournament" class="nav-link" routerLinkActive="active">
+            <a routerLink="/tournament" class="nav-link link-3" routerLinkActive="active">
               <i class="fa fa-trophy"></i> Tournoi
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/challenge" class="nav-link" routerLinkActive="active">
+            <a routerLink="/challenge" class="nav-link link-3" routerLinkActive="active">
               <i class="fa fa-angellist"></i> Challenges
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/reservation" class="nav-link" routerLinkActive="active">
+            <a routerLink="/reservation" class="nav-link link-3" routerLinkActive="active">
               <i class="fa fa-snapchat-ghost"></i> Reservation
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/sponsor" class="nav-link" routerLinkActive="active">
+            <a routerLink="/sponsor" class="nav-link link-3" routerLinkActive="active">
               <i class="fa fa-angellist"></i> Sponsors
             </a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item">
-            <a routerLink="/login" class="nav-link" routerLinkActive="active" *ngIf="!auth.loggedIn">
+            <a routerLink="/login" class="nav-link link-3" routerLinkActive="active" *ngIf="!auth.loggedIn">
               <i class="fa fa-sign-in"></i> Login
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/register" class="nav-link" routerLinkActive="active" *ngIf="!auth.loggedIn">
+            <a routerLink="/register" class="nav-link link-3" routerLinkActive="active" *ngIf="!auth.loggedIn">
               <i class="fa fa-user-plus"></i> Register
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/account" class="nav-link" routerLinkActive="active" *ngIf="auth.loggedIn">
+            <a routerLink="/account" class="nav-link link-3" routerLinkActive="active" *ngIf="auth.loggedIn">
               <i class="fa fa-user"></i> Account ({{ auth.currentUser.username }})
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/admin" class="nav-link" routerLinkActive="active" *ngIf="auth.loggedIn && auth.isAdmin">
+            <a routerLink="/admin" class="nav-link link-3" routerLinkActive="active" *ngIf="auth.loggedIn && auth.isAdmin">
               <i class="fa fa-lock"></i> Admin
             </a>
           </li>
           <li class="nav-item">
-            <a routerLink="/logout" class="nav-link" routerLinkActive="active" *ngIf="auth.loggedIn">
+            <a routerLink="/logout" class="nav-link link-3" routerLinkActive="active" *ngIf="auth.loggedIn">
               <i class="fa fa-sign-out"></i> Logout
             </a>
           </li>
