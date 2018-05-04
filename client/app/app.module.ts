@@ -23,6 +23,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { TeamsComponent } from './teams/teams.component';
 import { ChallengeComponent } from './challenge/challenge.component';
 import { SponsorComponent } from './sponsor/sponsor.component';
+import { ReservationComponent } from './reservation/reservation.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -44,6 +45,7 @@ export function tokenGetter() {
     TeamsComponent,
     ChallengeComponent,
     SponsorComponent,
+    ReservationComponent,
   ],
   imports: [
     RoutingModule,
