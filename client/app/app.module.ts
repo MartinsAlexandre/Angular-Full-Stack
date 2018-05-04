@@ -22,6 +22,7 @@ import { TournamentComponent } from './tournament/tournament.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TeamsComponent } from './teams/teams.component';
 import { ChallengeComponent } from './challenge/challenge.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -42,6 +43,7 @@ export function tokenGetter() {
     NotFoundComponent,
     TeamsComponent,
     ChallengeComponent,
+    SponsorComponent,
   ],
   imports: [
     RoutingModule,

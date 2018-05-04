@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CatsComponent } from './cats/cats.component';
 import { DevsComponent } from './devs/devs.component';
+import { SponsorComponent } from './sponsor/sponsor.component';
 import { ChallengeComponent } from './challenge/challenge.component';
 import { AboutComponent } from './about/about.component';
 import { RegisterComponent } from './register/register.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'devs', component: DevsComponent },
   { path: 'teams', component: TeamsComponent },
   { path: 'challenge', component: ChallengeComponent },
+  { path: 'sponsor', component: SponsorComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },
