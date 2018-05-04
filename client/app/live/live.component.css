@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "coalition";
+    src: url("../../assets/fonts/Coalition.ttf");
+  }
+
+body {
+    background-color: grey;
+}
+
+.live {
+    background-image: url("../../assets/YouTube-streaming-is-offline.jpg");
+    height: 96vh;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#demo {
+    display: inline-block;
+    font-size : 50px;
+    position: relative;
+    top: 3%;
+    left: 30%;
+    color: red;
+    font-family: 'coalition', sans-serif;
+    letter-spacing: 10px;
+}
+
+#demo2 {
+    display: inline-block;
+    font-size : 40px;
+    position: relative;
+    top: 2%;
+    left: 20%;
+    color: red;;
+    font-family: 'coalition', sans-serif;
+}
+
+h1 {
+    font-family: 'coalition', sans-serif;
+    text-align: center;
+    color: red;
+    position: absolute;
+    top: 90%;    
+}

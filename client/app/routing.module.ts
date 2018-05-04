@@ -15,6 +15,7 @@ import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TournamentComponent } from './tournament/tournament.component';
 import { ReservationComponent } from './reservation/reservation.component';
+import { LiveComponent } from './live/live.component';
 
 import { AuthGuardLogin } from './services/auth-guard-login.service';
 import { AuthGuardAdmin } from './services/auth-guard-admin.service';
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'tournament', component: TournamentComponent },
+  { path: 'live', component: LiveComponent },
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'notfound', component: NotFoundComponent },
