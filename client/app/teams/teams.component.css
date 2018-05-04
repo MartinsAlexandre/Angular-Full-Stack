@@ -1,33 +1,52 @@
 #body {
-  height: 90vh;
-  background-image: url("../../assets/tournament.jpg");
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
+    height: 90vh;
+    background-image: url("../../assets/tournament.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
 }
 
 h1 {
-  color: white;
-  text-align: center;
+    color: white;
+    text-align: center;
 }
 
 .card {
-  background-color: cornflowerblue;
-  float: left;
-  margin-left: 2.6%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+    color: black;
+    background-color: rgba(178, 178, 178, 0.7) !important;
+    float: left;
+    margin-left: 2.6%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 #btnCard {
-  position: absolute;
-  bottom: 3%;
-  left: 16%;
+    position: absolute;
+    background-color: #b2b2b2;
+    color: white;
+    bottom: 3%;
+    left: 16%;
+}
+
+.button {
+    background: linear-gradient(135deg, #F5515F 0%, #A1051D 100%);
+    animation: nom_anim_bouton 1s infinite alternate
+}
+
+@keyframes nom_anim_bouton {
+    from {
+      bottom: 3%;
+      box-shadow:0 0 5px hsl(0,53%,46%)
+    }
+    to {
+        bottom: 5%;
+        box-shadow:0 0 15px hsl(0,50%,46%)
+    }
 }
 
 h5 {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 /*cube*/
@@ -35,158 +54,158 @@ h5 {
 /* both vendor-prefix and standard property */
 
 #conteneur {
-  z-index: 10;
-  position: relative;
-  width: 150px;
-  height: 200px;
-  margin: 0px auto;
-  perspective: 300px;
-  perspective-origin: center;
+    z-index: 10;
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin: 0px auto;
+    perspective: 300px;
+    perspective-origin: center;
 }
 
 .face {
-  background-size: 166%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  line-height: 150px;
-  text-align: center;
-  font-size: 80px;
-  opacity: 1;
-  border: solid 1px black;
-  transition: transform 400ms;
+    background-size: 166%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    line-height: 150px;
+    text-align: center;
+    font-size: 80px;
+    opacity: 1;
+    border: solid 1px black;
+    transition: transform 400ms;
 }
 
 .cote1 {
-  background-color: silver;
-  transform: translateZ(75px);
+    background-color: silver;
+    transform: translateZ(75px);
 }
 
 #conteneur:hover .cote1 {
-  transform: translateZ(150px);
+    transform: translateZ(150px);
 }
 
 .cote2 {
-  background-image: url("../../assets/tournament.jpg");
-  transform: translateX(75px) rotateY(90deg);
+    background-image: url("../../assets/tournament.jpg");
+    transform: translateX(75px) rotateY(90deg);
 }
 
 #conteneur:hover .cote2 {
-  transform: translateX(150px) rotateY(90deg);
+    transform: translateX(150px) rotateY(90deg);
 }
 
 .cote3 {
-  background-image: url("../../assets/tournament.jpg");
-  transform: translateX(-75px) rotateY(-90deg);
+    background-image: url("../../assets/tournament.jpg");
+    transform: translateX(-75px) rotateY(-90deg);
 }
 
 #conteneur:hover .cote3 {
-  transform: translateX(-150px) rotateY(-90deg);
+    transform: translateX(-150px) rotateY(-90deg);
 }
 
 .cote4 {
-  background-image: url("../../assets/tournament.jpg");
-  transform: translateY(75px) rotateX(-90deg);
+    background-image: url("../../assets/tournament.jpg");
+    transform: translateY(75px) rotateX(-90deg);
 }
 
 #conteneur:hover .cote4 {
-  transform: translateY(150px) rotateX(-90deg);
+    transform: translateY(150px) rotateX(-90deg);
 }
 
 .cote5 {
-  background-image: url("../../assets/tournament.jpg");
-  transform: translateY(-75px) rotateX(90deg);
+    background-image: url("../../assets/tournament.jpg");
+    transform: translateY(-75px) rotateX(90deg);
 }
 
 #conteneur:hover .cote5 {
-  transform: translateY(-150px) rotateX(90deg);
+    transform: translateY(-150px) rotateX(90deg);
 }
 
 .cote6 {
-  background-image: url("../../assets/tournament.jpg");
-  transform: translateZ(-75px);
+    background-image: url("../../assets/tournament.jpg");
+    transform: translateZ(-75px);
 }
 
 #conteneur:hover .cote6 {
-  transform: translateZ(-150px);
+    transform: translateZ(-150px);
 }
 
 .parent {
-  margin-top: 100px;
-  position: relative;
-  width: 150px;
-  height: 150px;
-  animation: AnimCubeXY 5s linear infinite;
-  transform-style: preserve-3d;
+    margin-top: 100px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    animation: AnimCubeXY 5s linear infinite;
+    transform-style: preserve-3d;
 }
 
 .parentChild {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  animation: AnimCubeZ 10s linear infinite;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    animation: AnimCubeZ 10s linear infinite;
+    transform-style: preserve-3d;
 }
 
 @keyframes AnimCubeXY {
-  0% {
-    transform-origin: center;
-    transform: rotateY(0deg) rotateX(0deg);
-  }
-  100% {
-    transform-origin: center;
-    transform: rotateY(360deg) rotateX(720deg);
-  }
+    0% {
+        transform-origin: center;
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotateY(360deg) rotateX(720deg);
+    }
 }
 
 @keyframes AnimCubeZ {
-  0% {
-    transform-origin: center;
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform-origin: center;
-    transform: rotateZ(360deg);
-  }
+    0% {
+        transform-origin: center;
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotateZ(360deg);
+    }
 }
 
 /*fin du cube*/
 
 .nom {
-  color: white;
-  font-weight: bold;
-  background-color: rgba(100, 149, 237);
-  border-radius: 20px;
-  width: 350px;
-  padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(100, 149, 237);
+    border-radius: 20px;
+    width: 350px;
+    padding: 10px;
 }
 
 .nom0 {
-  position: absolute;
-  bottom: 30%;
-  left: 15%;
-  text-align: left;
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    text-align: left;
 }
 
 .nom1 {
-  position: absolute;
-  bottom: 10%;
-  left: 15%;
-  text-align: left;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    text-align: left;
 }
 
 .nom2 {
-  position: absolute;
-  bottom: 10%;
-  right: 15%;
-  text-align: right;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    text-align: right;
 }
 
 .nom3 {
-  position: absolute;
-  bottom: 30%;
-  right: 15%;
-  text-align: right;
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+    text-align: right;
 }
