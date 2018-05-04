@@ -175,9 +175,9 @@ h5 {
 /*fin du cube*/
 
 .nom {
-  color: white;
   font-weight: bold;
-  background-color: rgba(100, 149, 237);
+  color: black;
+  background-color: rgba(178, 178, 178, 0.7) !important;
   border-radius: 20px;
   width: 350px;
   padding: 10px;
