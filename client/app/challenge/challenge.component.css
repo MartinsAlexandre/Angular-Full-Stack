@@ -1,0 +1,117 @@
+/* .defis {
+  height: 90vh;
+  width: 100%;
+  background-image: url("../../assets/defi1.jpg");
+  background-position: center;
+  background-size: cover;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  /* annulation des marges */
+  overflow: hidden;
+  /* on cache le débordement de contenu */
+  color: #fff;
+  background: #000;
+}
+
+.container-fluid {
+  padding: 0px !important;
+}
+
+#wrap {
+  /* position du conteneur pour le préparer à bouger */
+  position: relative;
+  top: 0;
+  /* on prépare la transition à venir */
+  transition: top 1.4s cubic-bezier(.49, .22, .52, 1.35);
+}
+
+#nav {
+  /* on fixe le menu en haut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1em 0;
+  margin: 0;
+  /* on centre les liens */
+  text-align: center;
+  background: #000;
+}
+
+#nav li {
+  /* on aligne les éléments de liste */
+  display: inline;
+  margin: 0;
+}
+
+#nav a {
+  /* on applique des marges aux liens */
+  display: inline-block;
+  margin: 0 3em;
+  color: #eee;
+  /* on applique une petite lueur */
+  text-shadow: 0 0 5px #fff;
+  /* on prévoit une petite transition (lueur) */
+  transition: all 1s;
+}
+
+/* slides */
+
+#slide1,
+#slide2,
+#slide3 {
+  /* height à adapter avec media queries */
+  height: 1000px;
+  padding-top: 100px;
+  /* préparation des transitions */
+  transition: background-position 1.4s cubic-bezier(.49, .22, .52, 1.35);
+}
+
+/* attribution des images de fond */
+
+#slide1 {
+  background: url("../../assets/defi1.jpg") center 0 no-repeat fixed;
+  background-size: cover;
+}
+
+#slide2 {
+  background: url("../../assets/pacman.jpg") center 0 no-repeat fixed;
+  background-size: cover;
+}
+
+#slide3 {
+  background: url("../../assets/app.jpg") center 0 no-repeat fixed;
+  background-size: cover;
+}
+
+/* Contenus des slides */
+
+.slide_inside {
+  width: 770px;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(0, 0, 0, .6);
+  padding: 50px;
+}
+
+#slide1 .slide_inside {
+  text-align: center;
+}
+
+#slide2 .slide_inside p {
+  width: 500px;
+  text-align: center;
+}
+
+#slide2 .slide_inside {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#slide3 .slide_inside {
+  text-align: center;
+  margin-top: 50px;
+}
