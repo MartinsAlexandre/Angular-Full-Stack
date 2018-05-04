@@ -6,6 +6,18 @@
   background-size: cover;
 } */
 
+@font-face {
+  font-family: "coalition";
+  src: url("../../assets/fonts/Coalition.ttf");
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  font-family: 'coalition', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
