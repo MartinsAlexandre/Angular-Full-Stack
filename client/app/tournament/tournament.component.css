@@ -30,6 +30,15 @@ body {font-family: 'Istok Web', sans-serif;background: url("http://picjumbo.com/
 .final {margin: 4.5em 0;}
 .défaite {text-decoration: line-through;}
 
+.pointer {
+  transition:.5s;
+}
+
+.pointer:hover {
+  cursor: pointer;
+  color: #71E4A5;
+}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
