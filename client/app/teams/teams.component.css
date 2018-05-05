@@ -6,23 +6,26 @@
 h1 {
   font-size: 50px;
   font-weight: bold;
-  color: white;
+  color: #EE3F74;
   font-family: 'coalition', sans-serif;
   text-align: center;
+  margin-top: 20px;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 2px white;
 }
 
 #body {
-  height: 96vh;
+  min-height: 96vh;
   margin: 0%;
-  background-image: url("../../assets/tournament.jpg");
+  background-image: url("../../assets/Developpeur-web.jpg");
   background-position: center;
   background-size: cover;
   overflow: hidden;
 }
 
 .card {
-  color: black;
-  background-color: rgba(178, 178, 178, 0.7) !important;
+  background-color: #EE3F74 !important;
+  color: white;
   float: left;
   margin-left: 2.6%;
   text-align: center;
@@ -32,15 +35,15 @@ h1 {
 
 #btnCard {
   position: absolute;
-  background-color: #b2b2b2;
-  color: white;
+  background-color: #84d7a5;
+  color: #EE3F74;
   bottom: 3%;
   left: 16%;
 }
 
 .button {
-  background: linear-gradient(135deg, #F5515F 0%, #A1051D 100%);
-  animation: nom_anim_bouton 1s infinite alternate
+  background-color: #84d7a5;
+  animation: nom_anim_bouton 1s infinite alternate;
 }
 
 @keyframes nom_anim_bouton {
@@ -185,8 +188,8 @@ h6 {
 
 .nom {
   font-weight: bold;
-  color: black;
-  background-color: rgba(178, 178, 178, 0.7) !important;
+  color: #84d7a5;
+  background-color: #EE3F74 !important;
   border-radius: 20px;
   width: 350px;
   padding: 10px;

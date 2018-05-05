@@ -8,9 +8,13 @@
   height: 96vh;
   overflow: hidden;
   position: absolute;
-  background-image: url("../../assets/planche.jpg");
-  background-size: cover;
-  background-position: center;
+  background: #71E4A5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #71E4A5, #89253e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #71E4A5, #89253e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
 }
 
 .scene {
@@ -33,7 +37,7 @@
   width: 300px;
   height: 300px;
   box-sizing: border-box;
-  border: 5px solid #9aa;
+  border: 5px solid #EE3F74;
   background-color: rgba(32, 170, 151, 0.5);
   padding: 120px 0;
   font: 50px/1 'Trebuchet MS', sans-serif;
@@ -72,7 +76,7 @@
 
 .top,
 .bottom {
-  background-color: rgba(105, 136, 190, 0.5)
+  background-color: #EE3F74;
 }
 
 @keyframes example {
@@ -91,8 +95,10 @@
 h1 {
   font-size: 50px;
   font-weight: bold;
-  color: black;
   font-family: 'coalition', sans-serif;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0.33, #84d7a5), color-stop(0.55, #EE3F74), color-stop(0.76, #EE3F74));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .spons1 {
@@ -110,9 +116,14 @@ h1 {
   text-align: right;
 }
 
-a {
+.spons1 a {
   text-decoration: none;
-  color: white;
+  color: #71E4A5;
+}
+
+.spons2 a {
+  text-decoration: none;
+  color: #EE3F74;
 }
 
 h2 {

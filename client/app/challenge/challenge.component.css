@@ -1,11 +1,3 @@
-/* .defis {
-  height: 90vh;
-  width: 100%;
-  background-image: url("../../assets/defi1.jpg");
-  background-position: center;
-  background-size: cover;
-} */
-
 @font-face {
   font-family: "coalition";
   src: url("../../assets/fonts/Coalition.ttf");
@@ -14,7 +6,7 @@
 h1 {
   font-size: 50px;
   font-weight: bold;
-  color: white;
+  color: #84d7a5;
   font-family: 'coalition', sans-serif;
 }
 
@@ -24,8 +16,9 @@ body {
   /* annulation des marges */
   overflow: hidden;
   /* on cache le débordement de contenu */
-  color: #fff;
+  color: #84d7a5;
   background: #000;
+  font-weight: bold;
 }
 
 .container-fluid {
@@ -105,7 +98,8 @@ body {
   width: 770px;
   margin: 0 auto;
   position: relative;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(238, 63, 116, 0.7);
+  /*  #EE3F74 */
   padding: 50px;
 }
 

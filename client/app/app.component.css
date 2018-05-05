@@ -2,14 +2,12 @@
   font-family: "coalition";
   src: url("../assets/fonts/Coalition.ttf");
 }
+
 .navMenu {
   color: #fff !important;
   font-family: 'coalition', sans-serif;
-  background-color: rgba(0, 0, 0, 0.3) !important;
-  /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; */
+  background-color: #EE3F74;
+  height: 50px;
 }
 
 .navbar-nav .nav-link {
@@ -23,16 +21,18 @@
 .link-3 {
   transition: 0.4s;
   color: #ffffff;
-  font-size: 0.8vw;
+  font-size: 1vw;
   text-decoration: none;
   padding: 0 10px;
   margin: 0 10px;
 }
+
 .link-3:hover {
   background-color: #84d7a5;
   color: white;
   /* padding: 3px 2px; */
 }
+
 .link-3:active {
   background-color: #84d7a5;
   color: red;

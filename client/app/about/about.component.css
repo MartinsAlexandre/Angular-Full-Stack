@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "coalition";
-    src: url("../../assets/fonts/Coalition.ttf");
+  font-family: "coalition";
+  src: url("../../assets/fonts/Coalition.ttf");
 }
 
 body,
@@ -10,27 +10,29 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Monospace", sans-serif;
+  font-family: "Monospace", sans-serif;
 }
 
 body,
 html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
 }
 
 .image-principale {
-    height: 30vw;
-    width: 40vw;
+  height: 30vw;
+  width: 40vw;
 }
-.w3-center{
-    font-family: 'coalition', sans-serif;
+
+.w3-center {
+  font-family: 'coalition', sans-serif;
 }
+
 .w3-black,
 .w3-hover-black:hover {
-    color: #fff !important;
-    background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 /* Create a Parallax Effect */
@@ -38,71 +40,71 @@ html {
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 
 .bgimg-1 {
-    background-image: url('./../../assets/Developpeur-web.jpg');
-    min-height: 50vw;
+  background-image: url('./../../assets/Developpeur-web.jpg');
+  min-height: 50vw;
 }
 
 /* Second image (Portfolio) */
 
 .bgimg-2 {
-    background-image: url("./../../assets/php-web-development.png");
-    min-height: 400px;
+  background-image: url("./../../assets/php-web-development.png");
+  min-height: 400px;
 }
 
 /* Third image (Contact) */
 
 .bgimg-3 {
-    background-image: url("./../../assets/code_developpeur.jpg");
-    min-height: 400px;
+  background-image: url("./../../assets/code_developpeur.jpg");
+  min-height: 400px;
 }
 
 .w3-wide {
-    letter-spacing: 10px;
+  letter-spacing: 10px;
 }
 
 .w3-hover-opacity {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .padding-icone-all {
-    padding-top: 5vw;
+  padding-top: 5vw;
 }
 
 .padding-icone {
-    padding-top: 2vw;
-    padding-left: 22vw;
+  padding-top: 2vw;
+  padding-left: 22vw;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
 
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: scroll;
-    }
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+  }
 }
 
 .background {
-    background-color: #71E4A5;
+  background-color: #71E4A5;
 }
 
 .color-base {
-    color: #EE3F74;
-    font-family: 'coalition', sans-serif;
+  color: #EE3F74;
+  font-family: 'coalition', sans-serif;
 }
 
 .color-paralax {
-    background-color: rgba(0, 0, 0, 0.7) !important;
-    color: #71E4A5;
-    font-family: 'coalition', sans-serif;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: #71E4A5;
+  font-family: 'coalition', sans-serif;
 }
