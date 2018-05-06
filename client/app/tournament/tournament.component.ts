@@ -10,7 +10,7 @@ export class TournamentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    let countDownDate = new Date("May 4, 2018 15:40:00").getTime();
+    let countDownDate = new Date("May 4, 2018 17:00:00").getTime();
 
     // Update the count down every 1 second
     let x = setInterval(function () {
