@@ -9,8 +9,8 @@ body {
 
 .live {
   background-image: url("../../assets/YouTube-streaming-is-offline.jpg");
-  height: 96vh;
-  width: 100%;
+  height: 50vw;
+  width: 50vw;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
 
 #demo {
   display: inline-block;
-  font-size: 50px;
+  font-size: 1.5vw;
   position: relative;
   top: 3%;
   left: 30%;
@@ -29,7 +29,7 @@ body {
 
 #demo2 {
   display: inline-block;
-  font-size: 40px;
+  font-size: 1.5vw;
   position: relative;
   top: 2%;
   left: 20%;
@@ -44,4 +44,5 @@ h1 {
   color: red;
   position: absolute;
   top: 90%;
+  font-size: 1.5vw;
 }
