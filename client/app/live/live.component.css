@@ -4,7 +4,9 @@
 }
 
 body {
-  background-color: #84d7a5;
+  background: #71E4A5;
+  background: -webkit-linear-gradient(to left, #71E4A5, #89253e);
+  background: linear-gradient(to left, #71E4A5, #89253e);
 }
 
 .live {
