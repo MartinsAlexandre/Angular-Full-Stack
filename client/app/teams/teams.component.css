@@ -6,26 +6,25 @@
 h1 {
   font-size: 50px;
   font-weight: bold;
-  color: #EE3F74;
+  color: rgba(0, 0, 0, 0.6);
   font-family: 'coalition', sans-serif;
   text-align: center;
   margin-top: 20px;
   letter-spacing: 10px;
-  text-shadow: 1px 1px 2px white;
 }
 
 #body {
   min-height: 96vh;
   margin: 0%;
-  background-image: url("../../assets/Developpeur-web.jpg");
-  background-position: center;
-  background-size: cover;
   overflow: hidden;
+  background: #71E4A5;
+  background: -webkit-linear-gradient(to left, #71E4A5, #89253e);
+  background: linear-gradient(to left, #71E4A5, #89253e);
 }
 
 .card {
-  background-color: #EE3F74 !important;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #84d7a5;
   float: left;
   margin-left: 2.6%;
   text-align: center;
@@ -35,25 +34,25 @@ h1 {
 
 #btnCard {
   position: absolute;
-  background-color: #84d7a5;
+  background-color: rgba(0, 0, 0, 0);
   color: #EE3F74;
   bottom: 3%;
   left: 16%;
+  font-weight: bold;
 }
 
 .button {
-  background-color: #84d7a5;
   animation: nom_anim_bouton 1s infinite alternate;
 }
 
 @keyframes nom_anim_bouton {
   from {
     bottom: 3%;
-    box-shadow: 0 0 5px hsl(0, 53%, 46%)
+    /* box-shadow: 0 0 5px hsl(0, 53%, 46%) */
   }
   to {
     bottom: 5%;
-    box-shadow: 0 0 15px hsl(0, 50%, 46%)
+    /* box-shadow: 0 0 15px hsl(0, 50%, 46%) */
   }
 }
 
@@ -189,7 +188,7 @@ h6 {
 .nom {
   font-weight: bold;
   color: #84d7a5;
-  background-color: #EE3F74 !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
   border-radius: 20px;
   width: 350px;
   padding: 10px;
@@ -197,28 +196,28 @@ h6 {
 
 .nom0 {
   position: absolute;
-  bottom: 30%;
+  top: 75%;
   left: 15%;
   text-align: left;
 }
 
 .nom1 {
   position: absolute;
-  bottom: 10%;
+  top: 95%;
   left: 15%;
   text-align: left;
 }
 
 .nom2 {
   position: absolute;
-  bottom: 10%;
+  top: 75%;
   right: 15%;
   text-align: right;
 }
 
 .nom3 {
   position: absolute;
-  bottom: 30%;
+  top: 95%;
   right: 15%;
   text-align: right;
 }
